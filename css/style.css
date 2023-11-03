@@ -31,8 +31,10 @@ main {
 }
 
 .main-container {
-    margin: 0 auto; 
-    max-width: 75%;
+    margin: 20px auto; 
+    max-width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer {
@@ -55,6 +57,7 @@ h5 {
 /* 
     HEADER
 */
+
 .header-container {
     position: relative;
 }
@@ -91,7 +94,14 @@ h5 {
     MAIN
 */
 
-
+.card {
+    height: 140px;
+    width: 220px;
+    background-color: lightcoral;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
 
 /* 
     FOOTER
