@@ -17,16 +17,22 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1200px;
+
+header {
+    height: 60px;
+    background-color: black;
 }
 
 main {
     background-color: black;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px);
     overflow: auto;
     color: white;
+}
+
+.main-container {
+    margin: 0 auto; 
+    max-width: 75%;
 }
 
 footer {
@@ -35,21 +41,61 @@ footer {
     color: white;
 }
 
+.footer-container, .main-container, .header-container {
+    display: flex;
+    height: 100%;
+}
+
+
 h5 {
     font-size: 10px;
     font-weight:lighter;
-    padding-top: 5px;
 }
+
+/* 
+    HEADER
+*/
+.header-container {
+    position: relative;
+}
+
+.speaker {
+    width: 100px;
+    height: 20px;
+    color: white; 
+    margin-right: 5px;
+}
+
+.fa-maximize {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.speaker, .fa-maximize {
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 19px;
+    font-size: smaller;
+}
+
+.view {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* 
+    MAIN
+*/
+
+
 
 /* 
     FOOTER
 */
-
-.footer-container {
-    display: flex;
-    height: 100%;
-
-}
 
 .my-col-1-3 {
     /* border: 1px dashed white; */
@@ -68,6 +114,11 @@ button {
     border: none;
     font-size: large;
     padding-left: 8px;
+
+}
+
+footer .fa-solid{
+    padding-bottom: 8px;
 }
 
 .icons {
