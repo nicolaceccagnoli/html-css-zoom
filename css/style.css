@@ -21,3 +21,16 @@ html{
     margin: 0 auto;
     max-width: 1200px;
 }
+
+main {
+    background-color: black;
+    height: calc(100vh - 100px);
+    overflow: auto;
+    color: white;
+}
+
+footer {
+    height: 100px;
+    background-color:#222222;
+    color: white;
+}
