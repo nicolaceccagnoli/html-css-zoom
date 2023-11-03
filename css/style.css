@@ -24,13 +24,78 @@ html{
 
 main {
     background-color: black;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 60px);
     overflow: auto;
     color: white;
 }
 
 footer {
-    height: 100px;
-    background-color:#222222;
+    height: 60px;
+    background-color:#222;
     color: white;
+}
+
+h5 {
+    font-size: 10px;
+    font-weight:lighter;
+    padding-top: 5px;
+}
+
+/* 
+    FOOTER
+*/
+
+.footer-container {
+    display: flex;
+    height: 100%;
+
+}
+
+.my-col-1-3 {
+    /* border: 1px dashed white; */
+    min-width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+}
+
+.my-col-1-3:nth-of-type(2) > * {
+    justify-content: space-between;
+}
+
+button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: large;
+    padding-left: 8px;
+}
+
+.icons {
+    font-size: 24px;
+    cursor:pointer;
+}
+
+.angle {
+    font-size: 12px;
+    padding: 0 8px 0 8px;
+}
+
+.my-col-1-3:nth-of-type(3) {
+    justify-content: flex-end;
+}
+
+.end {
+    background-color: #4A4A4A;
+    color: red;
+    height: 100%;
+    width: 20%;
+}
+
+.rooms {
+    color: black;
+    filter:invert(100%) ;
+}
+
+.share {
+    color: #4CC703;
 }
